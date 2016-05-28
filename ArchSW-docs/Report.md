@@ -16,7 +16,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nunc risus. U
 
 Maecenas vitae augue sollicitudin, malesuada mauris sit amet, elementum erat. Quisque maximus dignissim finibus. Sed sit amet sem iaculis, sodales elit sed, porta urna. Vivamus ut arcu placerat mauris scelerisque mattis. Phasellus nec elit enim. Praesent vestibulum scelerisque diam. Ut vel ex purus. 
 
-![Some-View](https://github.com/JoseReisinho/obs-studio/tree/master/ArchSW-docs/Images/exemplo.png)
+![Some-View](https://github.com/JoseReisinho/obs-studio/blob/master/ArchSW-docs/Images/exemplo.png)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nunc risus. Ut vel erat urna. Proin rutrum pretium urna a varius. Aliquam erat volutpat. Phasellus ac velit tincidunt sem pulvinar venenatis. Fusce dictum tempor magna, finibus laoreet elit pulvinar vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi quis eleifend nunc, id cursus velit. Fusce pretium ipsum vitae turpis cursus, sed accumsan justo fringilla. Aliquam elementum ex urna, eu consequat magna tempor at. Cras mattis, sapien et euismod tincidunt, est magna ornare est, maximus eleifend ex mi sed libero. 
 
@@ -25,7 +25,7 @@ Maecenas vitae augue sollicitudin, malesuada mauris sit amet, elementum erat. Qu
 ## Vista Lógica 
 
 
-### Vista de Implementação
+## Vista de Implementação
 
 
 ## Vista de Processo

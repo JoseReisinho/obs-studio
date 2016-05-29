@@ -2,8 +2,9 @@
 
 ## *OBS Studio*
 
-OBS Studio (formerly known as OBS Multiplatform) is a complete rewrite of the original OBS from the ground up, with the main goals being multiplatform support, a more thorough feature set, and a much more powerful API. While still in its early stages, releases are currently available for Windows, Mac and Linux.
-OBS Studio will eventually support many of the advanced requested features not present in the original OBS, such as multiple stream outputs and scene previewing, the latter of which is now available in the current release.
+O **Open Broadcast Software** é um gestor de captura utilizado para a gravação e transmição em directo de video e audio. Escrito maioritariamente em C e C++, este software permite a **captura em tempo real de janelas/aplicações e dispositivos, gestão de cenas, codificação de video/audio, gravação para ficheiro e transmissão**. A transmissão é feita através do protocolo RTMP e pode ser enviado para qualquer destino que o suporte (ex. Youtube, Twitch.tv).
+
+O **OBS Studio** é um *rewrite* do OBS original. Com objectivo de suportar outros sistemas operativos além do Windows, conter uma API mais poderosa e uma colecção de funcionalidades mais rica.
 
 ## Arquitectura de Software
 

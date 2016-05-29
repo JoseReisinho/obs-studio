@@ -41,8 +41,15 @@ No momento que o software é iniciado as configurações gravadas são usadas. O
 E, a qualquer altura da execução do programa, o utilizador pode alterar qualquer configuração que assim pretender. Desde perfis e cenas a dispositivos de captura.
 Além disto o utilizador pode repetidamente dar inicio às tarefas de transmição e gravação sem sair da aplicação. Criando um diagrama de atividades sem um fim concreto.
 
-## Vista de *Deployment* 
+## Vista de *Deployment*
+
+A **vista de Deployment** é usada para modelar o *deployment* físico de nós e artefactos.
+Neste caso, os nós são os componentes de hardware e os artefactos são os componentes de software que correm nos ditos nós.
+
 ![Deployment View](https://github.com/JoseReisinho/obs-studio/blob/master/ArchSW-docs/Images/Deployment%20View.png)
+
+No caso do *OBS-Studio*, o unico componente de hardware presente é o dispositivo que executa o programa, neste caso um PC (ou, possivelmente, um tablet). 
+Durante esta análise procuramos uma possivel ligação a um servidor, mas quando existe um streaming a ser feito, este é feito por um 3rd party software. Por essa razão, não o incluimos na deployment view.
 
 ## Vista de Casos de Uso
 ![Use Cases View](https://github.com/JoseReisinho/obs-studio/blob/master/ArchSW-docs/Images/Use%20Cases.png)

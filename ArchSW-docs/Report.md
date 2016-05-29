@@ -42,10 +42,10 @@ E, a qualquer altura da execução do programa, o utilizador pode alterar qualqu
 Além disto o utilizador pode repetidamente dar inicio às tarefas de transmição e gravação sem sair da aplicação. Criando um diagrama de atividades sem um fim concreto.
 
 ## Vista de *Deployment* 
-
+![Deployment View](https://github.com/JoseReisinho/obs-studio/blob/master/ArchSW-docs/Images/Deployment%20View.png)
 
 ## Vista de Casos de Uso
-
+![Use Cases View](https://github.com/JoseReisinho/obs-studio/blob/master/ArchSW-docs/Images/Use%20Cases.png)
 
 ## Análise Crítica
 

@@ -55,6 +55,14 @@ No caso do *OBS-Studio*, o unico componente de hardware presente é o dispositiv
 Durante esta análise procuramos uma possivel ligação a um servidor, mas quando existe um streaming a ser feito, este é feito por um 3rd party software. Por essa razão, não o incluimos na deployment view.
 
 ## Vista de Casos de Uso
+
+Os *Casos de Uso*, ou *Use Cases*, são uma lista de acções ou passos que definem a interação entre um *actor* e o sistema, para atingir um objectivo concreto.
+Um *actor* tem de ser capaz de fazer decisões, mas não tem de ser humano, podendo ser, por exemplo, uma empresa ou organização, ou até um programa ou sistema de computador.
+Uma pessoa pode exercer diferentes papeis como *actor*. No caso do OBS-Studio, um user pode por exemplo apenas usar a função de recording, enquanto que outro pode já incluir o streaming.
+A vista de casos de uso pode ser representada de várias formas. Enquanto que numa primeira fase um diagrama feito pelo *stakeholder* possa ser suficiente, em alguns casos pode ser necessario ter mais informação, ou mais detalhe. Neste caso, uma tabela dividida entre *"User Input"* e *"System Response"* poderia ser, por exemplo, um bom complemento ao diagrama apresentado.
+O mais importante nesta vista é alcançar um nivel de abstração que proporcione a qualquer pessoa uma *overview* do sistema em poucos minutos e sem qualquer tipo de conhecimento a nível técnico.
+Em baixo encontra-se a vista de casos de uso para o software usado.
+
 ![Use Cases View](https://github.com/JoseReisinho/obs-studio/blob/master/ArchSW-docs/Images/Use%20Cases.png)
 
 ## Análise Crítica

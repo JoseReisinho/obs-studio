@@ -25,6 +25,9 @@ Maecenas vitae augue sollicitudin, malesuada mauris sit amet, elementum erat. Qu
 
 ## Vista Lógica 
 
+A **Vista Lógica** tem por objectivo ilustrar as funcionalidades do software ao "end-user".
+Neste Software em particular o utilizador consegue atravez do GUI operar as varias funcionalidades como abrir projectos anteriormente criados, definir e editar as "sources" que está a capturar criar "scenes" para organizar as "sources" e tudo isto sempre com o cliente a devolver em tempo real "feedback" na forma de um "preview" do que está a ser feito. Após a conclusão da edição por parte do utilizador este pode optar por guardar o que criou na sua maquina ou até se assim o desejar fazer "streaming" da captura para um outro serviço durante a mesma. 
+
 ![Logic-View](https://github.com/JoseReisinho/obs-studio/blob/master/ArchSW-docs/Images/LogView%20(3).png)
 
 ## Vista de Implementação

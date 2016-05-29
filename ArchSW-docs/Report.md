@@ -24,6 +24,7 @@ Maecenas vitae augue sollicitudin, malesuada mauris sit amet, elementum erat. Qu
 
 ## Vista Lógica 
 
+![Logic-View](https://github.com/JoseReisinho/obs-studio/blob/master/ArchSW-docs/Images/LogView%20(3).png)
 
 ## Vista de Implementação
 

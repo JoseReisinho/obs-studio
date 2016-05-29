@@ -11,18 +11,6 @@ O **OBS Studio** é um *rewrite* do OBS original. Com objectivo de suportar outr
 Um dos modelos usados para organizar as diferentes vistas arquitecturais em engenharia de *software* é o modelo de arquitetura 4+1. Este organiza a descrição da arquitectura de software em 5 vistas concorrentes. Cada vista trata um conjunto de objectivos específicos do projecto, de acordo com os diferentes *stakeholders*, como os utilizadores, utilizadores finais, programadores e gestores de projeto.
 As vistas propostas pelo modelo são: a **vista lógia**, a **vista de implementação**, a **vista do processo**, a **vista de** **_deployment_** e a **vista de casos de uso**. Esta última serve para ilustrar e validar as demais.
 
-## Vista Exemplo
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nunc risus. Ut vel erat urna. Proin rutrum pretium urna a varius. Aliquam erat volutpat. Phasellus ac velit tincidunt sem pulvinar venenatis. Fusce dictum tempor magna, finibus laoreet elit pulvinar vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi quis eleifend nunc, id cursus velit. Fusce pretium ipsum vitae turpis cursus, sed accumsan justo fringilla. Aliquam elementum ex urna, eu consequat magna tempor at. Cras mattis, sapien et euismod tincidunt, est magna ornare est, maximus eleifend ex mi sed libero. 
-
-Maecenas vitae augue sollicitudin, malesuada mauris sit amet, elementum erat. Quisque maximus dignissim finibus. Sed sit amet sem iaculis, sodales elit sed, porta urna. Vivamus ut arcu placerat mauris scelerisque mattis. Phasellus nec elit enim. Praesent vestibulum scelerisque diam. Ut vel ex purus. 
-
-![Some-View](https://github.com/JoseReisinho/obs-studio/blob/master/ArchSW-docs/Images/exemplo.png)
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nunc risus. Ut vel erat urna. Proin rutrum pretium urna a varius. Aliquam erat volutpat. Phasellus ac velit tincidunt sem pulvinar venenatis. Fusce dictum tempor magna, finibus laoreet elit pulvinar vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi quis eleifend nunc, id cursus velit. Fusce pretium ipsum vitae turpis cursus, sed accumsan justo fringilla. Aliquam elementum ex urna, eu consequat magna tempor at. Cras mattis, sapien et euismod tincidunt, est magna ornare est, maximus eleifend ex mi sed libero. 
-
-Maecenas vitae augue sollicitudin, malesuada mauris sit amet, elementum erat. Quisque maximus dignissim finibus. Sed sit amet sem iaculis, sodales elit sed, porta urna. Vivamus ut arcu placerat mauris scelerisque mattis. Phasellus nec elit enim. Praesent vestibulum scelerisque diam. Ut vel ex purus. 
-
 ## Vista Lógica 
 
 A **Vista Lógica** tem por objectivo ilustrar as funcionalidades do software ao "end-user".
@@ -47,12 +35,13 @@ Além disto o utilizador pode repetidamente dar inicio às tarefas de transmiç�
 ## Vista de *Deployment*
 
 A **vista de Deployment** é usada para modelar o *deployment* físico de nós e artefactos.
-Neste caso, os nós são os componentes de hardware e os artefactos são os componentes de software que correm nos ditos nós.
+Neste caso em particular, os nós são os componentes de hardware e os artefactos são os componentes de software que correm nesse hardware.
 
 ![Deployment View](https://github.com/JoseReisinho/obs-studio/blob/master/ArchSW-docs/Images/Deployment%20View.png)
 
-No caso do *OBS-Studio*, o unico componente de hardware presente é o dispositivo que executa o programa, neste caso um PC (ou, possivelmente, um tablet). 
-Durante esta análise procuramos uma possivel ligação a um servidor, mas quando existe um streaming a ser feito, este é feito por um 3rd party software. Por essa razão, não o incluimos na deployment view.
+Acima temos a **vista de deployment** a que chegamos. No OBS Studio o único componente de hardware presente é o dispositivo que executa o programa, aqui ilustrado como um PC mas pode ser qualquer dispositivo a correr um sistema operativo suportado (tablet windows 10, macbook, etc).
+Existe uma possível ligação a um servidor quando existe uma transmissão a ser feita, mas este é enviado por RTMP e recebido por um 3rd party software. Não há a necessidade do OBS Studio ser *deployed* neste dispositivo.
+Existe também uma ligação a recursos físicos ligados ao computador. Uma webcam, um microfone ou uma placa de aquisiçãod e video. Mas tudo isto são components ligados ao dispositivo a executar o OBS Studio, e não dependem directamente dele.
 
 ## Vista de Casos de Uso
 

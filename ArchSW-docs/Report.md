@@ -31,6 +31,7 @@ Maecenas vitae augue sollicitudin, malesuada mauris sit amet, elementum erat. Qu
 
 ## Vista de Processo
 
+![Process-View](https://github.com/JoseReisinho/obs-studio/blob/master/ArchSW-docs/Images/Process%20View.png)
 
 ## Vista de *Deployment* 
 

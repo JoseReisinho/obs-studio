@@ -9,26 +9,19 @@ O **OBS Studio** é um *rewrite* do OBS original. Com objectivo de suportar outr
 ## Arquitectura de Software
 
 Um dos modelos usados para organizar as diferentes vistas arquitecturais em engenharia de *software* é o modelo de arquitetura 4+1. Este organiza a descrição da arquitectura de software em 5 vistas concorrentes. Cada vista trata um conjunto de objectivos específicos do projecto, de acordo com os diferentes *stakeholders*, como os utilizadores, utilizadores finais, programadores e gestores de projeto.
-As vistas propostas pelo modelo são: a **vista lógia**, a **vista de implementação**, a **vista do processo**, a **vista de** **_deployment_** e a **vista de casos de uso**. Esta última serve para ilustrar e validar as demais.
-
-## Vista Exemplo
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nunc risus. Ut vel erat urna. Proin rutrum pretium urna a varius. Aliquam erat volutpat. Phasellus ac velit tincidunt sem pulvinar venenatis. Fusce dictum tempor magna, finibus laoreet elit pulvinar vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi quis eleifend nunc, id cursus velit. Fusce pretium ipsum vitae turpis cursus, sed accumsan justo fringilla. Aliquam elementum ex urna, eu consequat magna tempor at. Cras mattis, sapien et euismod tincidunt, est magna ornare est, maximus eleifend ex mi sed libero. 
-
-Maecenas vitae augue sollicitudin, malesuada mauris sit amet, elementum erat. Quisque maximus dignissim finibus. Sed sit amet sem iaculis, sodales elit sed, porta urna. Vivamus ut arcu placerat mauris scelerisque mattis. Phasellus nec elit enim. Praesent vestibulum scelerisque diam. Ut vel ex purus. 
-
-![Some-View](https://github.com/JoseReisinho/obs-studio/blob/master/ArchSW-docs/Images/exemplo.png)
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in nunc risus. Ut vel erat urna. Proin rutrum pretium urna a varius. Aliquam erat volutpat. Phasellus ac velit tincidunt sem pulvinar venenatis. Fusce dictum tempor magna, finibus laoreet elit pulvinar vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi quis eleifend nunc, id cursus velit. Fusce pretium ipsum vitae turpis cursus, sed accumsan justo fringilla. Aliquam elementum ex urna, eu consequat magna tempor at. Cras mattis, sapien et euismod tincidunt, est magna ornare est, maximus eleifend ex mi sed libero. 
-
-Maecenas vitae augue sollicitudin, malesuada mauris sit amet, elementum erat. Quisque maximus dignissim finibus. Sed sit amet sem iaculis, sodales elit sed, porta urna. Vivamus ut arcu placerat mauris scelerisque mattis. Phasellus nec elit enim. Praesent vestibulum scelerisque diam. Ut vel ex purus. 
+As vistas propostas pelo modelo são: a **vista lógica**, a **vista de implementação**, a **vista do processo**, a **vista de** **_deployment_** e a **vista de casos de uso**. Esta última serve para ilustrar e validar as demais.
 
 ## Vista Lógica 
 
-A **Vista Lógica** tem por objectivo ilustrar as funcionalidades do software ao "end-user".
-Neste Software em particular o utilizador consegue atravez do GUI operar as varias funcionalidades como abrir projectos anteriormente criados, definir e editar as "sources" que está a capturar criar "scenes" para organizar as "sources" e tudo isto sempre com o cliente a devolver em tempo real "feedback" na forma de um "preview" do que está a ser feito. Após a conclusão da edição por parte do utilizador este pode optar por guardar o que criou na sua maquina ou até se assim o desejar fazer "streaming" da captura para um outro serviço durante a mesma. 
+A **Vista Lógica** ilustra a funcionalidade que o software disponibiliza ao *end-user*. Representa também pedaços do sistema divididos em agrupamentos lógicos, mostrando as dependências entre eles.
 
 ![Logic-View](https://github.com/JoseReisinho/obs-studio/blob/master/ArchSW-docs/Images/LogView%20(3).png)
+
+No OBS Studio em particular o utilizador consegue atravez de apenas uma janela, acima representada como *GUI*, executar todas as funcionalidades que lhe são disponibilizadas. Abrir projectos anteriormente criados, definir e editar as *sources* que está a capturar, criar *scenes* para organizar as *sources*, etc
+Em simultâneo o cliente devolve em tempo real uma *preview* da *scene* que está a ser capturada.
+Também em simultâneo o utilizador pode optar por guardar localmente o que está a capturar e/ou fazer *streaming* da captura para um dispostivo ou software que receba a transmição em formato RTMP.
+
+A secção a verde serve para ilustrar a dependencia de três componentes em particular. Todas as configurações são gravadas num perfil. Um perfil contém várias *scenes* entra as quais o utilizador pode alternar durante a captura. E cada *scene* contém uma colecção de *sources* que compôem a *scene*. Podem ser imagens, janelas de programas, uma camera de video, etc.
 
 ## Vista de Implementação
 
@@ -42,7 +35,7 @@ Diagramas gerados com **_graphviz_** que apresentam as dependências entre fiche
 
 ## Vista de Processo
 
-A **vista de processo** tem por objectivo ilustrar a forma como o software se divide em processos(ou threads) e se vai comportando em tempo de execução. Neste software em particular temos uma correlação directa entre a interecção do utilizador e o comportamento do programa. Por este motivo escolhemos um **diagrama de atividades** que, de uma forma muito simples, representa a paralelidade dos processos.
+A **Vista de Processo** tem por objectivo ilustrar a forma como o software se divide em processos(ou threads) e se vai comportando em tempo de execução. Neste software em particular temos uma correlação directa entre a interecção do utilizador e o comportamento do programa. Por este motivo escolhemos um **diagrama de atividades** que, de uma forma muito simples, representa a paralelidade dos processos.
 
 ![Process-View](https://github.com/JoseReisinho/obs-studio/blob/master/ArchSW-docs/Images/Process%20View.png)
 
@@ -53,22 +46,25 @@ Além disto o utilizador pode repetidamente dar inicio às tarefas de transmiç�
 
 ## Vista de *Deployment*
 
-A **vista de Deployment** é usada para modelar o *deployment* físico de nós e artefactos.
-Neste caso, os nós são os componentes de hardware e os artefactos são os componentes de software que correm nos ditos nós.
+A **Vista de _Deployment_** é usada para modelar o *deployment* físico de nós e artefactos.
+Neste caso em particular, os nós são os componentes de hardware e os artefactos são os componentes de software que correm nesse hardware.
 
 ![Deployment View](https://github.com/JoseReisinho/obs-studio/blob/master/ArchSW-docs/Images/Deployment%20View.png)
 
-No caso do *OBS-Studio*, o unico componente de hardware presente é o dispositivo que executa o programa, neste caso um PC (ou, possivelmente, um tablet). 
-Durante esta análise procuramos uma possivel ligação a um servidor, mas quando existe um streaming a ser feito, este é feito por um 3rd party software. Por essa razão, não o incluimos na deployment view.
+Acima temos a Vista de *Deployment* a que chegamos. No OBS Studio o único componente de hardware presente é o dispositivo que executa o programa, aqui ilustrado como um PC, mas pode ser qualquer dispositivo a correr um sistema operativo suportado (tablet windows, macbook, etc).
+Existe uma possível ligação a um servidor quando está uma transmissão a ser feita, mas este é enviado por RTMP e recebido por um *3rd party software*. Não há a necessidade do OBS Studio ser *deployed* neste dispositivo de destino.
+Existe também uma ligação a recursos físicos ligados ao computador. Uma webcam, um microfone ou uma placa de aquisiçãod e video. Mas tudo isto são components ligados ao dispositivo a executar o OBS Studio, e não dependem directamente dele.
 
 ## Vista de Casos de Uso
 
-Os *Casos de Uso*, ou *Use Cases*, são uma lista de acções ou passos que definem a interação entre um *actor* e o sistema, para atingir um objectivo concreto.
-Um *actor* tem de ser capaz de fazer decisões, mas não tem de ser humano, podendo ser, por exemplo, uma empresa ou organização, ou até um programa ou sistema de computador.
-Uma pessoa pode exercer diferentes papeis como *actor*. No caso do OBS-Studio, um user pode por exemplo apenas usar a função de recording, enquanto que outro pode já incluir o streaming.
-A vista de casos de uso pode ser representada de várias formas. Enquanto que numa primeira fase um diagrama feito pelo *stakeholder* possa ser suficiente, em alguns casos pode ser necessario ter mais informação, ou mais detalhe. Neste caso, uma tabela dividida entre *"User Input"* e *"System Response"* poderia ser, por exemplo, um bom complemento ao diagrama apresentado.
-O mais importante nesta vista é alcançar um nivel de abstração que proporcione a qualquer pessoa uma *overview* do sistema em poucos minutos e sem qualquer tipo de conhecimento a nível técnico.
-Em baixo encontra-se a vista de casos de uso para o software usado.
+A **Vista de Casos de Uso** ou **Vista de Cenários** é uma lista de acções ou passos que definem a interação entre um *actor* e o sistema a fim de atingir um objectivo em particular.
+Um *actor* tem de ser capaz de fazer decisões, mas não tem de ser humano, pode ser, por exemplo, uma empresa, uma organização ou até um programa ou sistema de informação.
+Uma pessoa pode exercer diferentes papeis como *actor*. No caso do OBS Studio, um utilizador pode por exemplo apenas usar a função de *recording*. Enquanto que outro pode simultaneamente incluir o *streaming*.
+
+A Vista de Casos de Uso pode ser representada de várias formas. Enquanto que numa primeira fase um diagrama feito pelo *stakeholder* possa ser suficiente, em alguns casos pode ser necessário ter mais informação, ou mais detalhe. No nosso diagrama, uma tabela dividida entre *"User Input"* e *"System Response"* poderia ser, por exemplo, um bom complemento ao diagrama apresentado.
+O mais importante nesta vista é alcançar um nível de abstração que proporcione a qualquer pessoa uma *overview* do sistema em poucos minutos e sem qualquer tipo de conhecimento a nível técnico do sistema.
+
+Em baixo encontra-se a Vista de Casos de Uso a que chegamos para o OBS Studio.
 
 ![Use Cases View](https://github.com/JoseReisinho/obs-studio/blob/master/ArchSW-docs/Images/Use%20Cases.png)
 

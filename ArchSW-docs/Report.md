@@ -32,6 +32,13 @@ Neste Software em particular o utilizador consegue atravez do GUI operar as vari
 
 ## Vista de Implementação
 
+A **Vista de Implementação** tem por objetivo ilustrar as ligações e dependências entre classes e objetos usados no programa, nomeadamente no seu funcionamento *core*.
+Este *software* está feito em forma de vários componentes separados em diretórios de forma a encapsular os seus elementos como a parte gráfica(*GUI*), *plugins*, e funcionalidade principal(*core*). Este diagrama e feito sobre a funcionalidade *core* que realiza a captura e tratamento de informação.
+
+![Implementation-View](https://github.com/JoseReisinho/obs-studio/blob/master/ArchSW-docs/Images/ImpView1.png)
+![Implementation-View](https://github.com/JoseReisinho/obs-studio/blob/master/ArchSW-docs/Images/ImpView2.png)
+
+Diagramas gerados com **_graphviz_** que apresentam as dependências entre ficheiros que refletem a interação entre as classes **obs_scene** e **obs_internal** que tratam de tudo que mostra no ecrã e o seu funcionamento interno.
 
 ## Vista de Processo
 
@@ -66,4 +73,8 @@ Em baixo encontra-se a vista de casos de uso para o software usado.
 ![Use Cases View](https://github.com/JoseReisinho/obs-studio/blob/master/ArchSW-docs/Images/Use%20Cases.png)
 
 ## Análise Crítica
+
+## Referências
+http://epf.eclipse.org/wikis/openup/core.tech.common.extend_supp/guidances/examples/four_plus_one_view_of_arch_9A93ACE5.html
+
 

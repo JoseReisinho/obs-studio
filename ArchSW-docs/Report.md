@@ -8,8 +8,11 @@ O **OBS Studio** é um *rewrite* do OBS original. Com objetivo de suportar outro
 
 ## Arquitectura de Software
 
-Um dos modelos usados para organizar as diferentes vistas arquitecturais em engenharia de *software* é o modelo de arquitetura 4+1. Este organiza a descrição da arquitectura de software em 5 vistas concorrentes. Cada vista trata um conjunto de objetivos específicos do projeto, de acordo com os diferentes *stakeholders*, como os utilizadores, utilizadores finais, programadores e gestores de projeto.
-As vistas propostas pelo modelo são: a **vista lógica**, a **vista de implementação**, a **vista do processo**, a **vista de** **_deployment_** e a **vista de casos de uso**. Esta última serve para ilustrar e validar as demais.
+**Arquitetura de Software** pode ser descrita como as estruturas de alto nível de um sistema de software, as decisões tomadas na criação dessas estruturas, e a documentação a elas associada.
+
+Estas estruturas são necessárias para se avaliar o sistema. Cada estrutura contém elementos do software, a relação entre eles e as propriedadades de cada elemento numa relação. **Arquitetura** de software é uma metáfora, análoga à arquitetura de um edifício.
+
+Um dos modelos utilizados para visualizar a estrutura de um sistema em arquitetura de software é o **_4+1 Arquitectural View Model_**. Este foi o modelo escolhido para documentar e analisar o OBS Studio. Este modelo é composto por 5 vistas concorrentes: **Vista Lógica**, **Vista de Implementação**, **Vista do Processo**, **Vista de _Deployment_** e **Vista de Casos de Uso**. Cada vista representa um conjunto de objetivos específicos do projeto, de acordo com os diferentes *stakeholders* envolvidos.
 
 ## Vista Lógica 
 
@@ -26,12 +29,14 @@ A secção a verde serve para ilustrar a dependência de três componentes em pa
 ## Vista de Implementação
 
 A **Vista de Implementação** tem por objetivo ilustrar as ligações e dependências entre classes e objetos usados no programa, nomeadamente no seu funcionamento *core*.
-Este *software* está feito em forma de vários componentes separados em diretórios de forma a encapsular os seus elementos como a parte gráfica(*GUI*), *plugins*, e funcionalidade principal(*core*). Este diagrama e feito sobre a funcionalidade *core* que realiza a captura e tratamento de informação.
+Este *software* está feito em forma de vários componentes separados em diretórios de forma a encapsular os seus elementos como a parte gráfica(*GUI*), *plugins*, e funcionalidade principal(*core*). Este diagrama é feito sobre a funcionalidade *core* que realiza a captura e tratamento de informação.
 
 ![Implementation-View](https://github.com/JoseReisinho/obs-studio/blob/master/ArchSW-docs/Images/ImpView1.png)
 ![Implementation-View](https://github.com/JoseReisinho/obs-studio/blob/master/ArchSW-docs/Images/ImpView2.png)
 
-Diagramas gerados com **_graphviz_** que apresentam as dependências entre ficheiros que refletem a interação entre as classes **obs_scene** e **obs_internal** que tratam de tudo que mostra no ecrã e o seu funcionamento interno.
+Os diagramas acima foram gerados com **_graphviz_** e representam as dependências entre ficheiros que refletem a interação entre as classes **obs_scene** e **obs_internal** que tratam de tudo o que é apresentado no ecrã e o seu funcionamento interno.
+
+Nesta vista escolhemos recorrer a este método de apresentação pois um único grafo de relações entre as classes torna a navegação muito complicada e confusa em análise visual. Dois gráficos de relação entre os ficheiros mais importates conseguem mais facilmente transmitir e ilustrar o pretendido. Continua a não ser o ideal, mas a complexidade do código em questão não permite obter uma ilustração mais *on-point*. Achamos no entanto, que assim conseguimos refletir o objectivo da vista de implementação.
 
 ## Vista de Processo
 
@@ -70,7 +75,6 @@ Em baixo encontra-se a Vista de Casos de Uso a que chegamos para o OBS Studio.
 
 ## Análise Crítica
 
-Na Vista de Implementação tivemos de recorrer a este método de apresentação pois um único grafo de relações entre as classes torna a navegação muito complicada para qualquer pessoa que olhe. Dois gráficos de relação entre os ficheiros que interessam conseguem transmitir a mensagem, apesar de não serem o ideal, refletindo o que é necessário para a tarefa pedida.
 
 ## Referências
 http://epf.eclipse.org/wikis/openup/core.tech.common.extend_supp/guidances/examples/four_plus_one_view_of_arch_9A93ACE5.html

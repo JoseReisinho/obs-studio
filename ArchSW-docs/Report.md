@@ -73,7 +73,6 @@ Em baixo encontra-se a Vista de Casos de Uso a que chegamos para o OBS Studio.
 
 ![Use Cases View](https://github.com/JoseReisinho/obs-studio/blob/master/ArchSW-docs/Images/Use%20Cases.png)
 
-## Análise Crítica
 
 
 ## Referências

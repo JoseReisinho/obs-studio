@@ -66,7 +66,7 @@ A **Vista de Casos de Uso** ou **Vista de Cenários** é uma lista de acções o
 Um *actor* tem de ser capaz de fazer decisões, mas não tem de ser humano, pode ser, por exemplo, uma empresa, uma organização ou até um programa ou sistema de informação.
 Uma pessoa pode exercer diferentes papeis como *actor*. No caso do OBS Studio, um utilizador pode por exemplo apenas usar a função de *recording*. Enquanto que outro pode simultaneamente incluir o *streaming*.
 
-A Vista de Casos de Uso pode ser representada de várias formas. Enquanto que numa primeira fase um diagrama feito pelo *stakeholder* possa ser suficiente, em alguns casos pode ser necessário ter mais informação, ou mais detalhe. No nosso diagrama, uma tabela dividida entre *"User Input"* e *"System Response"* poderia ser, por exemplo, um bom complemento ao diagrama apresentado.
+A Vista de Casos de Uso pode ser representada de várias formas. Enquanto que numa primeira fase um diagrama feito pelo *stakeholder* possa ser suficiente, em alguns casos pode ser necessário ter mais informação, ou mais detalhe. No nosso diagrama, uma tabela dividida entre *User Input* e *System Response* poderia ser, por exemplo, um bom complemento ao diagrama apresentado.
 O mais importante nesta vista é alcançar um nível de abstração que proporcione a qualquer pessoa uma *overview* do sistema em poucos minutos e sem qualquer tipo de conhecimento a nível técnico do sistema.
 
 Em baixo encontra-se a Vista de Casos de Uso a que chegamos para o OBS Studio.
@@ -76,6 +76,15 @@ Em baixo encontra-se a Vista de Casos de Uso a que chegamos para o OBS Studio.
 
 
 ## Referências
+
 http://epf.eclipse.org/wikis/openup/core.tech.common.extend_supp/guidances/examples/four_plus_one_view_of_arch_9A93ACE5.html
 
+## Contribuições
+
+Houve uma contribuição equilibrada por parte de todos os elementos do grupo. Reunimo-nos em diversas ocasiões para estudar o software escolhido e elaborar cada uma das vistas do modelo de arquitectura estudado.
+
+Eduardo Moura - 25%
+Joana Silva - 25%
+Pavlo Sazonov - 25%
+José Reisinho - 25%
 

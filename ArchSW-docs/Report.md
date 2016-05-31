@@ -84,7 +84,10 @@ http://epf.eclipse.org/wikis/openup/core.tech.common.extend_supp/guidances/examp
 Houve uma contribuição equilibrada por parte de todos os elementos do grupo. Reunimo-nos em diversas ocasiões para estudar o software escolhido e elaborar cada uma das vistas do modelo de arquitectura estudado.
 
 Eduardo Moura - 25%
+
 Joana Silva - 25%
+
 Pavlo Sazonov - 25%
+
 José Reisinho - 25%
 
